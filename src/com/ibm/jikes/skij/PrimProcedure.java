@@ -377,7 +377,7 @@ public abstract class PrimProcedure extends Procedure {
 	try {
 	  String filename = (String)args.car;
 	  filestream = new FileInputStream(filename);
-	  System.out.println("Loading " + filename + "...");
+	  //System.out.println("Loading " + filename + "...");
 	  (new SchemeListener(filestream)).repl(); 
 	}
 	catch (FileNotFoundException e) {
